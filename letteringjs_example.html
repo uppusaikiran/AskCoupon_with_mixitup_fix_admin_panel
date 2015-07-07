@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Introducing lettering.js</title>
+    <link href="_css/base.css" rel="stylesheet" type="text/css">
+    <script src="jquery/jquery-2.1.4.js"></script>
+    <script src="jquery/jquery.lettering.js"></script>
+    <script src="http://use.edgefonts.net/bebas-neue;cardo;playfair-display.js"></script> 
+    <script>
+  $(document).ready(function() {
+    $(".stack").lettering();
+  });
+</script>
+<style>
+    body {
+        background: rgb(245,245,240);
+        width: 80%;
+        margin: 2em auto 0;
+    }
+    section {
+    overflow: hidden;
+    width: 900px;
+    margin: 0 auto;
+    }
+    p {
+        margin:0;
+        font-family: playfair-display, arial, serif;
+    }
+    img {
+        display: block;
+    }
+    .cover {
+        background: black;
+        color: white;
+        width: 40%;
+        margin: 0;
+        padding: 1% 7% 1% 10%;
+        float:left;
+        margin-right: 2em;
+    }
+    .author {
+        font-size: 1.6em;
+        text-transform: uppercase;
+        letter-spacing: 0.65em;
+        line-height: 1em;
+        font-weight: 100;
+        margin-bottom:1.6em;
+        text-align:center;
+    }
+    .author:first-letter {
+        font-size: 1.2em;
+        display:inline-block;
+    }
+    .stack {
+        font-family: bebas-neue, sans-serif;
+        font-size:18em;
+        word-wrap: break-word;
+        overflow-wrap:break-word;
+        line-height:0.7em;
+    }
+    .tagline {
+        font-size: 1.2em;
+        letter-spacing: 0.2em;
+        margin: 1em 0;
+    }
+    span {
+        position: relative;
+    }
+    .char1 {
+        z-index: 4;
+        text-shadow: 0.05em 0.05em 0.2em rgba(10,10,10,.8);
+        margin-left: -0.05em;
+    }
+    .char2 {
+        z-index: 3;
+        text-shadow: 0.05em 0.01em 0.3em rgba(10,10,10,.8);
+        margin-left: -0.09em;
+        top: 0.05em;
+    }
+    .char3 {
+        z-index: 9;
+        text-shadow: -0.02em 0.02em 0.14em rgba(10,10,10,.8);
+        margin-left: -0.05em;
+    }
+    .char4 {
+        z-index: 5;
+        text-shadow: 0.01em -0.01em 0.14em rgba(10,10,10,.8);
+        margin-left: -0.05em;
+        top: -0.01em;
+    }
+    .char5 {
+        z-index: 2;
+        text-shadow: -0.02em -0.02em 0.14em rgba(10,10,10,.8);
+        margin-left: -0.06em;
+        top: 0.02em;
+    }
+    .char6 {
+        z-index: 10;
+        text-shadow: -0.02em -0.02em 0.14em rgba(10,10,10,.8);
+        margin-left: -0.06em;
+        top: -0.02em;
+    }
+    .char7 {
+        z-index: 8;
+        text-shadow: -0.02em -0.02em 0.14em rgba(10,10,10,.8);
+        margin-left: -0.05em;
+    }
+    .char8 {
+        z-index: 6;
+        text-shadow: -0.02em -0.02em 0.14em rgba(10,10,10,.8);
+        margin-left: -0.08em;
+        top: -0.02em;
+    }
+    .char9 {
+        z-index: 7;
+        text-shadow: -0.02em -0.02em 0.14em rgba(10,10,10,.8);
+        margin-left: -0.08em;
+    }
+    .char10 {
+        z-index: 1;
+        text-shadow: 0.05em 0.05em 0.14em rgba(10,10,10,.8);
+        margin-left: -0.03em;
+        top: -0.02em;
+    }
+    .char11 {
+        z-index: 0;
+        text-shadow: -0.02em -0.02em 0.14em rgba(10,10,10,.8);
+        margin-left: -0.08em;
+        top: -0.02em;
+    }
+</style>
+</head>
+<body>
+    <h1>Introducing lettering.js</h1>
+    <section>
+    <div class="cover">
+        <p class="author">James Case</p>
+        <p class="stack">Competition</p>
+        <p class="tagline">The Birth of a New Science</p>
+    </div>
+     <img src="img/comp.jpg">
+    </section>
+</body>
+</html>
